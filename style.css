@@ -1,0 +1,74 @@
+.test__block {
+    max-width: 1920px;
+    width: 100%;
+    color: #fff;
+    border: 1px solid #fff;
+    font-size: 72px;
+    line-height: 110px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 500px;
+    z-index: 1
+}
+
+.test__block:before, .test__block:after {
+    content: "";
+    width: 100%;
+    height: 24px;
+    background-color: #000;
+    display: block
+}
+
+.test__block .bg {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 24px;
+    left: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    z-index: -1
+}
+
+.test__block .bg_row {
+    position: absolute;
+    width: 100%;
+    height: 34px;
+    background-color: #000;
+    z-index: -1
+}
+
+.test__block .empty {
+    display: inline-block;
+    width: 150px;
+    height: 72px
+}
+
+.test__block .empty-big {
+    width: 400px
+}
+
+.test__block .effect {
+    width: 100%;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden
+}
+
+.test__block .effect video {
+    width: 100%;
+    height: auto
+}
+
+@media (max-width: 877px) {
+    .test__block .effect video {
+        height: 100%;
+        width: auto
+    }
+}
